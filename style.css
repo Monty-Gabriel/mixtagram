@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    justify-items: center;
+    
+}
+
+.instagram-logo {
+    height:100px; 
+    width:250px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    padding: 0 50px 50px 50px;
+    max-width: 300px;
+    height: 350px;
+}
+
+.instagram-logo-letras img{
+    width: 100%;
+    height: 100%;
+}
+
+.instagram-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram-profile a {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.instagram-avatar img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    filter: brightness(1.9);
+}
+
+
+.remover-conta {
+    margin-top: 20%;
+}
+
+.not-account {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.not-account a {
+    color: rgb(49, 149, 236);
+    text-decoration: underline;
+}
+
+.continue-como {
+    margin-top: 15px;
+}
+
+.botao-continue-como{
+    background-color: rgba(255, 72, 215, 0.5);
+    border: none;
+    color: rgb(255, 255, 255);
+
+    padding: 10px 14px;
+    width: 180px;
+    margin: auto;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+    border-radius: 7px;
+}
+
+.botao-continue-como:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao-continue-como i{
+    margin-right: 7px;
+}
+
+.botao{
+    background-color: rgba(104, 53, 93, 0.5);
+    border: none;
+    color: rgb(255, 255, 255);
+
+    padding: 12px 24px;
+    margin: auto;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+    border-radius: 7px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 7px ;
+}
+
+.instagram-app {
+    display: block;
+    text-align: center;
+}
+
+.app-download img {
+    height: 60px;
+    width: 170px;
+}
+
+
+.instagram-mobile img {
+    height: 600px;
+    width: 320px;
+}
+
+@media screen and (max-width: 750px) {
+    .instagram-mobile {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .instagram-avatar img {
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        filter: brightness(1.9);
+    }
+
+    .botao {
+        margin-top: 1px;
+    }
+
+    .botao-continue-como {
+        margin-bottom: 1px;
+        margin-top: 8px;
+    }
+
+    .not-account {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .botao-continue-como{
+            
+        padding: 2px 4px;
+        height: 50px;
+        width:350px;
+        margin: auto;
+        font-size: 18px;
+    }
+    
+    .instagram-avatar img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        filter: brightness(1.9);
+    }
+}
